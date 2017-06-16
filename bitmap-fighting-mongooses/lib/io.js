@@ -11,8 +11,9 @@ io.read = (path, callback) => {
   });
 };
 
-
-
-// io.write = () => {
-//   fs.writeFile(pathhhh, ())
-// };
+io.write = (buffer) => {
+  fs.writeFile('./assets/bitmap1.bmp',  buffer, (err) => {
+    if (err) throw err;
+    console.log('saved!');
+  });
+};
