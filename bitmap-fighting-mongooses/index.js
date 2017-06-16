@@ -11,4 +11,5 @@ io.read('../assets/bitmap.bmp', (err, data) => {
   console.log('height', bm.height);
   console.log('ogBuff', bm.ogBuff);
   console.log('COLORTABLE', bm.colorTable);
+  console.log('PIXEL ARRAY?', bm.pixelArray);
 });
