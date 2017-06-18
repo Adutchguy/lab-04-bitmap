@@ -15,12 +15,10 @@ bitmap.makeIt = (data) => {
 };
 
 bitmap.Bitmap.prototype.invert = function() {
-  console.log('before', this.colorTable);
   for(let i=0; i < this.colorTable.length; i += 4) {
     let temp = this.colorTable.slice(i, i + 4);
     for(let i = 0; i < temp.length - 1; i++) {
       temp[i] = 255 - temp[i];
-      console.log('during', this.colorTable);
     }
   }
 };
